@@ -255,7 +255,7 @@ def create_instruction_pdf_advanced(filename, data, image_paths):
     # description section
     story.append(PageBreak())
     story.append(Spacer(1, 10))
-    story.append(Paragraph("<b>ДДополнительное описание / Индикаторы:</b>", STYLES['H1_Custom']))
+    story.append(Paragraph("<b>Дополнительное описание / Индикаторы:</b>", STYLES['H1_Custom']))
 
     full_desc_paragraphs = data.get("full_description", "").split('\n')
     for p_text in full_desc_paragraphs:
